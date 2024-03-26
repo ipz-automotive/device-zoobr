@@ -1,0 +1,4 @@
+<ports>
+    <port display="1" input="card0-HDMI-A-1" />
+    <port display="2" input="card0-HDMI-A-2" />
+</ports>

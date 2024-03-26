@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.android.car.resources.md_zoobr.osdouble">
+    <application android:hasCode="false"/>
+    <overlay android:priority="5002"
+             android:targetPackage="com.android.car.cluster.osdouble"
+             android:targetName="CarServiceCustomization"
+             android:resourcesMap="@xml/overlays"
+             android:isStatic="true" />
+</manifest>
