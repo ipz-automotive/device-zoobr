@@ -54,7 +54,7 @@
         frameworks/base/services/core/java/com/android/server/pm/UserSystemPackageInstaller.java
         Package whitelist disabled for testing profile user as default whitelist does not
         support PROFILE user. -->
-    <integer name="config_userTypePackageWhitelistMode">2</integer>
+    <integer name="config_userTypePackageWhitelistMode">0</integer>
 
     <!-- Whether the device allows users to start in background visible on displays.
          Should be false for most devices, except automotive vehicle with passenger displays. -->
@@ -62,7 +62,7 @@
     <bool name="config_multiuserVisibleBackgroundUsers">true</bool>
 
     <!-- Enable multi-user IME sessions -->
-    <string translatable="false" name="config_deviceSpecificInputMethodManagerService">com.android.server.inputmethod.InputMethodManagerServiceProxy$Lifecycle</string>
+    <!-- <string translatable="false" name="config_deviceSpecificInputMethodManagerService">com.android.server.inputmethod.InputMethodManagerServiceProxy$Lifecycle</string> -->
     <!-- Disable hidding the NavBars (CarSystemBars), as a workaround for b/259604616 -->
     <bool name="config_hideNavBarForKeyboard">false</bool>
 

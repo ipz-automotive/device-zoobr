@@ -34,8 +34,7 @@
     <!-- Assign displays to occupant zones.  -->
     <string-array translatable="false" name="config_occupant_display_mapping">
         <item>displayPort=0,displayType=MAIN,occupantZoneId=0,inputTypes=TOUCH_SCREEN</item>
-        <item>displayPort=1,displayType=MAIN,occupantZoneId=1,inputTypes=TOUCH_SCREEN</item>
-        <item>displayPort=2,displayType=MAIN,occupantZoneId=2,inputTypes=TOUCH_SCREEN</item>
+        <item>displayPort=1,displayType=INSTRUMENT_CLUSTER,occupantZoneId=1,inputTypes=TOUCH_SCREEN</item>
     </string-array>
 
     <!-- Enable profile user assignment per each CarOccupantZone for per display android user
