@@ -6,3 +6,7 @@ TARGET_VENDOR_PROP := device/ipz-automotive/zoobr/vendor.prop
 
 # Display
 TARGET_SCREEN_DENSITY := 120
+
+# Vehicle SEPolicy
+BOARD_SEPOLICY_DIRS += \
+	vendor/ipz-automotive/zoobr_vhal/sepolicy

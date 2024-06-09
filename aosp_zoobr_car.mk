@@ -26,3 +26,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     packages/services/Car/car_product/car_ui_portrait/car_ui_portrait_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/car_ui_portrait_hardware.xml
+
+# Vehicle
+PRODUCT_PACKAGES := $(filter-out android.hardware.automotive.vehicle@2.0-default-service,$(PRODUCT_PACKAGES))
+
+PRODUCT_PACKAGES += \
+        android.hardware.automotive.vehicle@2.0-zoobr-service \
+        car_emulator
