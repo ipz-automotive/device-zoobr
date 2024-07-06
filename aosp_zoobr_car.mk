@@ -8,7 +8,7 @@ include device/brcm/rpi4/aosp_rpi4_car.mk
 PRODUCT_NAME := aosp_zoobr_car
 PRODUCT_DEVICE := zoobr
 
-# set portrait mode
+# Portrait mode
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.primary_display_orientation=ORIENTATION_270
 
@@ -31,5 +31,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES := $(filter-out android.hardware.automotive.vehicle@2.0-default-service,$(PRODUCT_PACKAGES))
 
 PRODUCT_PACKAGES += \
-        android.hardware.automotive.vehicle@2.0-zoobr-service \
-        car_emulator
+    android.hardware.automotive.vehicle@2.0-zoobr-service
+
+# Apps
+PRODUCT_PACKAGES += \
+    org.ipzautomotive.zoobr.MqttBrokerService \
+    GMaps \
+    GServices
+
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
+# Apps permissions
+PRODUCT_COPY_FILES += \
+    vendor/ipz-automotive/apps/preinstalled-packages-zoobr.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/preinstalled-packages-zoobr.xml
